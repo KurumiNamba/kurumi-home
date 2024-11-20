@@ -1,0 +1,186 @@
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    background-color: transparent !important;
+    border: none;
+}
+
+.navbar-toggler {
+    border-color: white; /* ボタンの枠線を白に */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M1 2.5h14M1 8h14M1 13.5h14'/%3E%3C/svg%3E");
+}
+
+.home-img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover; /* 画像をトリミングしてコンテナに収める */
+    object-position: center 60%;
+    position: relative;
+    filter: brightness(40%);
+}
+
+.home-img-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.section {
+    margin-top: 24px;
+}
+
+.heading-underline {
+    display: inline-block; /* テキスト幅に合わせる */
+    border-bottom: 8px solid #5ba995; /* 下線の設定 */
+    padding-bottom: 10px; /* 下線とテキストの間のスペース */
+    margin-bottom: 20px;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-img {
+    width: 200px;
+}
+
+#about-header {
+    transform: translateY(50%);
+    opacity: 0;
+}
+
+#values-header {
+    transform: translateY(50%);
+    opacity: 0;
+}
+
+.header {
+    animation: huwa 1.5s ease-out forwards;
+}
+
+#values1 {
+    transform: translateY(50%);
+    opacity: 0;
+}
+
+#values2 {
+    transform: translateY(50%);
+    opacity: 0;
+}
+
+#values3 {
+    transform: translateY(50%);
+    opacity: 0;
+}
+
+.values1 {
+    animation: huwa 1.75s ease-out forwards;
+}
+
+.values2 {
+    animation: huwa 2.25s ease-out forwards;
+}
+
+.values3 {
+    animation: huwa 2.75s ease-out forwards;
+}
+
+@keyframes huwa {
+    to {
+        transform: initial;
+        opacity: 1;
+    }
+}
+
+.name {
+    margin-left: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-me {
+        display: block;
+    }
+
+    .about-me-1 {
+        text-align: center;
+    }
+
+    .name {
+        text-align: center;
+        margin-top: 24px;
+    }
+}
+
+.history {
+    list-style: none;
+}
+
+/* Skills */
+
+.heading-24 {
+    position: relative;
+    padding-top: 1.5em;
+    color: #333333;
+}
+
+.heading-24::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    color: #b3d6ce;
+    font-size: 2.5em;
+    line-height: 1;
+    content: attr(data-number);
+    pointer-events: none;
+}
+
+@media screen and (min-width: 1080px) {
+    .skills-2 {
+        margin-left: 16%;
+    }
+
+    .skills-3 {
+        margin-left: 32%;
+    }
+
+    .skills-4 {
+        margin-left: 48%;
+    }
+}
+
+.values-p {
+    font-size: 1.5em;
+    color: #333333;
+}
+
+.values-i {
+    font-size: 5em;
+    color: #b3d6ce;
+}
+
+/* Contact */
+@media screen and (min-width: 1080px) {
+    form {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+.submit {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.submit:hover {
+    background: #ffffff;
+    color: #5ba995;
+}
